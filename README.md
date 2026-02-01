@@ -1,0 +1,10 @@
+Project Structure : - 
+- cmd/maverick/main.go (entry point)
+- internal/storage/ (storage layer)
+- internal/parser/ (SQL parser)
+- internal/executor/ (query execution)
+- internal/index/ (B+ Tree)
+- internal/txn/ (transactions)
+- internal/server/ (network)
+- pkg/protocol/ (wire protocol)
+- test/ (tests)
