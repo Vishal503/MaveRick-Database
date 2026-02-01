@@ -1,10 +1,15 @@
-Project Structure : - 
-- cmd/maverick/main.go (entry point)
-- internal/storage/ (storage layer)
-- internal/parser/ (SQL parser)
-- internal/executor/ (query execution)
-- internal/index/ (B+ Tree)
-- internal/txn/ (transactions)
-- internal/server/ (network)
-- pkg/protocol/ (wire protocol)
-- test/ (tests)
+MaveRickDB/
+├── cmd/
+│   └── maverick/
+│       └── main.go          ✅ Entry point (fixed!)
+├── internal/
+│   ├── executor/            ✅ Query execution
+│   ├── index/               ✅ B+ Tree
+│   ├── parser/              ✅ SQL parser
+│   ├── server/              ✅ Network
+│   ├── storage/             ✅ Storage layer
+│   └── txn/                 ✅ Transactions
+├── pkg/
+│   └── protocol/            ✅ Wire protocol
+├── test/                    ✅ Tests
+└── go.mod                   ✅ Go module
